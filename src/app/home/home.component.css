@@ -1,0 +1,21 @@
+
+.container {
+    position: relative;
+}
+img {
+    position: center;
+    width: 100%;
+    left: 0;
+}
+.title {
+    position: absolute;
+    width: 100%;
+    top: 37%;
+    font-size: 450%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    z-index: 1;
+    transition: top .5s ease;
+}

@@ -1,0 +1,31 @@
+.nameCompany{
+    height: 5%;
+}
+.menu{
+    display: flex;
+    width: 1024px;
+    margin: auto ;
+    font-weight: bolder;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-align: center;
+    color: #424242;
+}
+a:hover{
+    color: #6c87a3;
+}
+mat-grid-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 auto;
+    font-size: large;
+}
+mat-grid-tile{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+

@@ -1,0 +1,15 @@
+.wrap{
+    background-color: white;
+    width: 100%;
+    color: #787878;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    position: absolute;
+}
+a{
+    font-size: larger;
+    color: #787878;
+    text-decoration: none;
+}
+a:hover{
+    color: #ef5350;
+}

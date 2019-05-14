@@ -1,0 +1,26 @@
+a{
+    font-size: larger;
+    color: #0088CC;
+}
+a:hover{
+    color: #ef5350;
+}
+.map{
+    height: 250px;
+    width: 100%;
+}
+.message{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-end ;
+}
+mat-form-field{
+    margin-right: 1%;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    background-color: #0088CC;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

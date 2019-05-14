@@ -1,0 +1,25 @@
+.fontSize{
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #ef5350;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: #9e9e9e;
+}
+.fontSizeP{
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+mat-divider{
+    margin-top: 1%;
+}

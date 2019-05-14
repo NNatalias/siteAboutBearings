@@ -1,0 +1,41 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened style="padding-right: 2%">
+    <ul style="list-style-type: none; color: #3f5a74;font-size: larger;">
+        <li (click)="scroll(price)">Прайс-лист</li>
+      <li (click)="scroll(payment)">Оплата</li>
+      <li (click)="scroll(delivery)">Доставка</li>
+      <li (click)="scroll(guarantee)">Гарантия</li>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content style="background-color: white; padding-left: 3%;">
+      <div style="margin-bottom: 1%" #price>
+          <mat-toolbar class="fontSize">Полный список цен</mat-toolbar>
+      </div>
+    <div style="margin-bottom: 1%" #payment>
+      <mat-toolbar class="fontSize">Способы оплаты товара</mat-toolbar>
+    <p class="fontSizeP">Наличная оплата </p>
+    Товар оплачивается наличными только в национальной валюте. Для оплаты товаров наличными Вам необходимо будет подъехать к нам в офис.
+    При совершении оплаты Вы получаете товарный чек. Так же оплата наличными возможна при получении товара в отделении сервиса доставки («Нова пошта» или «Міст Експрес»).
+        <p class="fontSizeP">Оплата картами Visa и MasterCard </p>
+    Оплата совершается картами Visa и MasterCard любого банка.Вы можете осуществлять платежи через Интернет-банк, терминалы самообслуживания
+      и банкоматы, в отделениях.
+        <mat-divider></mat-divider>
+    </div>
+    <div style="margin-bottom: 1%" #delivery>
+      <mat-toolbar class="fontSize">Доставка товара</mat-toolbar>
+      <p class="fontSizeP">Самовывоз</p>
+      Вы можете получить свой заказ в нашем <a routerLink="/contacts">офисе</a>.
+      <p class="fontSizeP">Самовывоз из почтовых отделений</p>
+      Вы можете получить свой заказ в одном из отделений транспортных компаний «Нова пошта» или «Мист Экспресс».
+      Графики работы отделений и адреса Вы найдете на сайтах novaposhta.ua и meest-express.com.ua.
+      Стоимость доставки зависит от веса, габаритных размеров товара и выбранной транспортной компании.
+        <mat-divider></mat-divider>
+    </div>
+    <div style="margin-bottom: 1%" #guarantee>
+      <mat-toolbar class="fontSize">Гарантия</mat-toolbar>
+      <p class="fontSizeP">Условия гарантии</p>
+      Все товары на нашем сайте являются сертифицированными на территории Украины.Гарантийный срок на определенный товар устанавливается фирмой-производителем.
+        <mat-divider></mat-divider>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
