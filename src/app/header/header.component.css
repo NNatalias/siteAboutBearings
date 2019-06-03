@@ -1,17 +1,14 @@
-.nameCompany{
-    height: 5%;
-}
 .menu{
     display: flex;
     width: 1024px;
-    margin: auto ;
     font-weight: bolder;
-    height: 50px;
+    height: 70px;
     font-family: 'Montserrat', sans-serif;
 }
 a{
     text-align: center;
     color: #424242;
+    text-transform: uppercase;
 }
 a:hover{
     color: #6c87a3;
@@ -25,7 +22,79 @@ mat-grid-list{
 }
 mat-grid-tile{
     cursor: pointer;
+    text-transform: uppercase;
     text-decoration: underline;
 }
+.menuLogo{
+    display: none;
+}
+img{
+    width: 90%;
+    height: 100%;
+}
+@media (max-width: 1000px) {
+    .wrap{
+        display: none;
+    }
+    .mobileMenu {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background-color: white;
+        padding-left: 0;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    mat-sidenav-content{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+    }
+    a:hover{
+        color: gray;
+    }
+    li {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 2%;
+        font-size: x-large;
+    }
+    mat-sidenav-container{
+        position: inherit;
+        text-align: center;
+    }
+    mat-sidenav-container button{
+        float: left;
+        margin-top: -8px;
+    }
+    .mat-drawer{
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+    }
+    .toggleMenu{
+        color: inherit;
+        padding-top: 10px;
+        margin-top: 22%;
+        padding-left: 0;
+    }
+    .mobileMenu a{
+        font-size: 20px;
+    }
+    mat-sidenav-container .menuLogo a{
+        color: black;
+    }
+    .menuLogo{
+        display: block;
 
-
+    }
+img{
+    display: none;
+}
+.menu{
+    display: none;
+}
+}

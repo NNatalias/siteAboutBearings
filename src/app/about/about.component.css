@@ -1,1 +1,24 @@
-
+.pText{
+    margin-bottom: 0;
+}
+.tit{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+@media (max-width: 1000px) {
+    .text {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    .tit{
+        font-size: medium;
+        font-weight: bold;
+    }
+}
+@media (max-width: 390px) {
+    .tit{
+        margin-bottom: 3%;
+    }
+}

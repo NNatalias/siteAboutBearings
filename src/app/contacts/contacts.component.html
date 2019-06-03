@@ -1,53 +1,67 @@
-<h1 style="text-align: center; margin-top: 4%;">КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
-  <div class="contact">
-    <mat-grid-list cols="3" rowHeight="2:1">
-      <mat-grid-tile>
-        <p style="font-size: larger;">Телефон<br>
-          +38097-8866-345<br>
-          +38097-8866-345<br>
-          +38097-8866-345
-        </p>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <p style="font-size: larger;">Электронная почта <br>
-          <a href="mailto:goooooogle@gmail.com">goooooogle@gmail.com</a></p>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <p style="font-size: larger;">Адрес<br>
-          ул. Гагарина, 250,<br> Днепровская обл.<br>
-          50027, Украина
-        </p>
-      </mat-grid-tile>
+<h1 style="text-align: center; margin-top: 1%;margin-bottom: 0;">КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
+<div class="wrap1">
+            <div style="font-size: larger;width: 27%;display: flex;justify-content: center;"><p>Телефон<br>
+                +38067-569-47-17</p>
+            </div>
+            <div style="font-size: larger;width: 36%;display: flex;justify-content: center;"><p>Электронная почта <br>
+                <a href="mailto:krbearing@ukr.net">krbearing@ukr.net</a></p>
+            </div>
+            <div style="font-size: larger;width: 36%;display: flex;justify-content: center;"><p>Адрес<br>
+                ул. Днепропетровское шоссе 16Б, Кривой Рог<br>
+                50086, Украина</p>
+            </div>
+       </div>
+<div class="wrap1mob">
+    <mat-grid-list cols="2" rowHeight="90px">
+        <mat-grid-tile rowspan="1" colspan="2"><p style="width: 266px;">Телефон<br>
+            +38067-569-47-17</p></mat-grid-tile>
+        <mat-grid-tile rowspan="1" colspan="2" ><p>Электронная почта <br>
+            <a href="mailto:krbearing@ukr.net">krbearing@ukr.net</a></p></mat-grid-tile>
+        <mat-grid-tile rowspan="1" colspan="2" ><p>Адрес<br>
+            ул. Днепропетровское шоссе 16Б<br>
+            Кривой Рог, Украина</p></mat-grid-tile>
     </mat-grid-list>
-  </div>
+</div>
 <div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d342338.2579807173!2d33.08633631063655!3d47.90702073586569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadfe03154ab7b%3A0xb0fa3a177d6b186e!2z0JrRgNC40LLQvtC5INCg0L7Qsywg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7Qsd
-  C70LDRgdGC0YwsIDUwMDAw!5e0!3m2!1sru!2sua!4v1556554742344!5m2!1sru!2sua"
-          width="100%" height="100%" frameborder="0" style="border:0" ></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6836.895385465717!2d33.430397231336315!3d47.910751446200436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db20ee532787f7%3A0x75108e6e94a196e0!2z0YPQuy4g0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutC-0LUg0YguLCAxNiwg0JrRgNC40LLQvtC5INCg0L7Qsywg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDUwMDAw!5e0!3m2!1sru!2sua!4v1559409723832!5m2!1sru!2sua"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<div class="message">
-  <div style="margin-top: 2%; ">
-  <h1 style="font-weight: normal;">Быстрая заявка</h1>
-      <form #Form="ngForm">
-        <mat-form-field appearance="outline">
-          <mat-label>Как Вас зовут</mat-label>
-          <input matInput name="name" ngModel pattern="[А-Яа-яЁёa-zA-Z]+$" required>
-          <mat-error>
-            Введите Ваше имя
-          </mat-error>
-        </mat-form-field><br>
-        <mat-form-field appearance="outline">
-          <mat-label>Телефон или E-mail</mat-label>
-          <input matInput name="email tel" ngModel pattern="^[0-9a-zA-Z@./]+$" required>
-          <mat-error>
-            Введите свои контактные данные
-          </mat-error>
-        </mat-form-field><br>
-          <mat-form-field appearance="outline">
-            <mat-label>Интересующая продукция</mat-label>
-            <input matInput name="text" ngModel>
-          </mat-form-field>
-      <button mat-flat-button [disabled]="Form.invalid">Отправить</button>
-      </form>
-</div>
-</div>
+<div class="wrap2">
+    <div class="tels" style="font-size: larger;">
+        <p>Мы в мессенджерах<br>
+            +38067-569-47-17(Viber)<br>
+            +38067-569-47-17(WhatsApp)<br>
+            +38067-569-47-17(Telegram)<br></p>
+    </div>
+    <div class="message">
+            <h1 style="font-weight: normal;">Быстрая заявка</h1>
+            <form #mailForm="ngForm">
+                <mat-form-field appearance="outline">
+                    <mat-label>Как Вас зовут</mat-label>
+                    <input matInput name="name" ngModel pattern="[А-Яа-яЁёa-zA-Z]+$" required>
+                    <mat-error>
+                        Введите Ваше имя
+                    </mat-error>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="outline">
+                    <mat-label>Телефон или E-mail</mat-label>
+                    <input matInput name="emailTel" ngModel pattern="^[0-9a-zA-Z@./]+$" required>
+                    <mat-error>
+                        Введите свои контактные данные
+                    </mat-error>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="outline">
+                    <mat-label>Ваш вопрос или предложение</mat-label>
+                    <input matInput name="message" ngModel required>
+                    <mat-error>
+                        Введите текст Вашего обращения
+                    </mat-error>
+                </mat-form-field>
+                <button (click)="OnSubmit(mailForm)" mat-flat-button [disabled]="mailForm.invalid">Отправить</button>
+                <div *ngIf="sent" class="succesfullEmail">Сообщение успешно отправлено и будет обработано в ближайшее время</div>
+                <div *ngIf="error" class="errorEmail">Сообщение не отправлено,<br> попробуйте снова</div>
+            </form>
+        </div>
+    </div>

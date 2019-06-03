@@ -7,12 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PriceListComponent implements OnInit {
 
-  constructor() { }
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
-  }
-
-  ngOnInit() {
-  }
+  constructor() {}
+  ngOnInit() {}
 
 }

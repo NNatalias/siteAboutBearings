@@ -1,21 +1,82 @@
-
-.container {
-    position: relative;
+.text{
+    font-size: 150%;
 }
-img {
-    position: center;
-    width: 100%;
-    left: 0;
+.logoKP{
+    display: none;
 }
-.title {
-    position: absolute;
-    width: 100%;
-    top: 37%;
-    font-size: 450%;
+img{
+    width: 70%;
+    height: 100%;
+}
+.title{
     text-align: center;
+    font-size: 400%;
     text-transform: uppercase;
-    color: white;
-    font-weight: bolder;
-    z-index: 1;
-    transition: top .5s ease;
+    margin-bottom: 1%;
 }
+.title2{
+    text-transform: uppercase;
+    font-size: 250%;
+    margin-top: 1%;
+}
+.mobLogo{
+    display: none;
+}
+.mob2Logo{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .text {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: medium;
+    }
+    .title{
+        display: none;
+    }
+    .title2{
+        font-size: xx-large;
+        margin-top: 1%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+}
+@media (max-width: 850px) {
+    .title2{
+        margin: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .logo{
+        display: none;
+    }
+    .mobLogo{
+        display: none;
+    }
+    .mob2Logo{
+        display: block;
+    }
+}
+@media (max-width: 550px) {
+    .logo{
+        display: none;
+    }
+    .mobLogo{
+        display: block;
+    }
+    .mob2Logo{
+        display: none;
+    }
+    .title2{
+        margin: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+    }
+}
+

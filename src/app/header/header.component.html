@@ -1,7 +1,8 @@
-<div class="nameCompany">
-</div>
 <div class="menu">
-        <mat-grid-list cols="4" rowHeight="50px">
+        <mat-grid-list cols="5" rowHeight="70px">
+            <a routerLink="/about">
+                <mat-grid-tile> <img mat-card-image src="../../assets/logo.png" alt="Логотип"></mat-grid-tile>
+            </a>
             <a routerLink="/home">
                 <mat-grid-tile>ГЛАВНАЯ</mat-grid-tile>
             </a>
@@ -16,4 +17,18 @@
             </a>
         </mat-grid-list>
 </div>
+<mat-sidenav-container class="mobileMenu" >
+    <mat-sidenav #sidenav (click)="sidenav.toggle()">
+        <ul class="toggleMenu">
+            <li><a routerLink="/home">ГЛАВНАЯ</a></li>
+            <li><a routerLink="/about" >О КОМПАНИИ</a></li>
+            <li><a routerLink="/priceList" >ПРОДУКЦИЯ</a></li>
+            <li> <a routerLink="/contacts" >КОНТАКТЫ</a></li>
+        </ul>
+    </mat-sidenav>
+    <div class="menuLogo">
+        <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+        <a routerLink="/home"><h4 style="text-align: center;margin-right: 2%;margin-bottom: 0;margin-top: 3%;padding-left: -1%; text-transform: uppercase;">Кривбасподшипник</h4></a>
+    </div>
+</mat-sidenav-container>
 

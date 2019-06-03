@@ -4,6 +4,28 @@
     color: #787878;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+.logo{
+    width: 40%;
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: center;
+}
+.tel{
+    width: 45%;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: larger;
+    text-align: center;
+}
+.mail{
+    width: 45%;
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: center;
 }
 a{
     font-size: larger;
@@ -12,4 +34,32 @@ a{
 }
 a:hover{
     color: #ef5350;
+}
+@media (max-width: 1000px) {
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+    .tel{
+        text-align: center;
+    }
+}
+@media (max-width: 760px) {
+    a{
+        font-size: 12px;
+        text-align: center;
+    }
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+    }
+.tel{
+    text-align: center;
+    font-size: 12px;
+}
+.mail{
+    display: none;
+}
 }

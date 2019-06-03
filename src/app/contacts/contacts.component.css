@@ -9,10 +9,15 @@ a:hover{
     height: 250px;
     width: 100%;
 }
-.message{
-    font-family: 'Montserrat', sans-serif;
+.wrap1{
     display: flex;
-    justify-content: flex-end ;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 10%;
 }
 mat-form-field{
     margin-right: 1%;
@@ -23,4 +28,59 @@ button{
     background-color: #0088CC;
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+.wrap2{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between ;
+}
+.tels {
+    margin-left: 7%;
+}
+.message{
+    margin-right: 7%;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrap1mob{
+    display: none;
+}
+.succesfullEmail{
+    color: #0088CC;
+    font-size: small;
+    margin-top: 1%;
+}
+.errorEmail{
+    color: #ef5350;
+    font-size: small;
+    margin-top: 1%;
+}
+@media (max-width: 1000px) {
+.wrap2 {
+    flex-direction: column;
+}
+    .message{
+        margin: 4%;
+    }
+    .tels{
+        font-size: medium;
+    }
+}
+@media (max-width: 760px) {
+    .wrap1{
+        display: none;
+    }
+    .wrap1mob{
+        display: block;
+        font-size: large;
+    }
+    mat-grid-tile{
+        text-align: center;
+    }
+    .errorEmail {
+        margin-top: 2%;
+    }
+    .succesfullEmail {
+        margin-top: 2%;
+    }
 }
