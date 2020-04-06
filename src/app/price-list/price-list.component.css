@@ -5,94 +5,189 @@
     align-items: flex-start;
     width: 100%;
     font-size: medium;
+    color: black;
+}
+.title{
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 2%;
+  text-transform: uppercase;
+  color: #1D2B3B;
+}
+.firstTitle{
+  font-size: 36px;
+  font-family: 'Oswald', sans-serif;
+  color: #0C57FB;
+  margin: 1% 0 1% 0;
 }
 .bt{
     font-size: larger;
-    background-color: #0088CC;
+    background-color: #0C57FB;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    z-index: -1;
 }
 .fontS{
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
+    margin: 1% 0 1% 0;
 }
 a{
-    color: #0088CC;
+    color: #0C57FB;
     text-decoration: underline;
+    cursor: pointer;
 }
 a:hover{
     color: #ef5350;
 }
+.bearingsTitle a{
+  color: white;
+}
+.bearingsTitle a:hover{
+  color: #0C57FB;
+}
 .paragraph1{
+  font-size: larger;
     width: 30%;
     margin: 2%;
 }
 .paragraph2{
+  font-size: larger;
     width: 30%;
     margin: 2%;
 }
 .paragraph3{
+  font-size: larger;
     width: 30%;
     margin: 2%;
 }
-img{
-    width: 100%;
-    height: 300px;
-    align-content: center;
+.bearings{
+  background: url("../../assets/pic2.jpg")center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  align-content: center;
+}
+.bearingsTitle{
+  font-size: 56px;
+  text-align: center;
+  color: white;
+  z-index: 100;
+  text-shadow: 0 0 5px rgba(0,0,0,.5);
+  padding-top: 5%;
 }
 .containerMob{
     display: none;
 }
+@media (max-width: 1200px) {
+  .bearings{
+    height: 180px;
+  }
+  .bearingsTitle{
+    font-size: 50px;
+  }
+}
+@media (max-width: 1100px) {
+  .bearings{
+    height: 160px;
+  }
+  .bearingsTitle{
+    font-size: 45px;
+  }
+  .bt{
+    margin-top: 1% ;
+  }
+}
 @media (max-width: 1000px) {
-    .containerMob{
-        display: block;
-        width: 100%;
-        overflow-x: hidden;
-    }
-    .wrapScreen{
-        display: none;
-    }
     .wrap{
-        width: 100%;
+        width: 96%;
         overflow-x: hidden;
         flex-direction: column;
     }
     .paragraph1{
-        width: 100%;
+        width: 96%;
         padding-left: 13px;
         padding-right: 13px;
-        margin: 0;
+        margin:0 0 5% 0;
     }
     .paragraph2{
-        width: 100%;
+        width: 96%;
         padding-left: 13px;
         padding-right: 13px;
-        margin: 0;
+        margin:0 0 5% 0;
     }
     .paragraph3{
-          width: 100%;
+          width: 96%;
         padding-left: 13px;
         padding-right: 13px;
-        margin: 0;
+        margin:0 0 5% 0;
       }
-    .bt{
-        margin-bottom: 3%;
-        font-family: 'Montserrat', sans-serif;
+    .bearings{
+        height: 150px;
     }
-    img{
-        height: 180px;
-        margin-bottom: 0;
-    }
+  .bearingsTitle{
+    font-size: 40px;
+  }
 }
-@media (max-width: 380px) {
-    img{
-        height: 110px;
-        margin-bottom: 0;
-    }
+@media (max-width: 900px) {
+  .bearings{
+    height: 130px;
+  }
+  .bearingsTitle{
+    font-size: 36px;
+  }
+}
+@media (max-width: 800px) {
+  .bearings{
+    height: 110px;
+  }
+  .bearingsTitle{
+   padding-top: 4%;
+    font-size: 33px;
+  }
+  .bt{
+    margin-top: 2% ;
+  }
+}
+@media (max-width: 700px) {
+  .title{
+    font-size: 33px;
+  }
+  .bearingsTitle{
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .bt{
+    margin: 3% 0 3% 0;
+  }
+  .wrapScreen{
+    display: none;
+  }
+  .containerMob{
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 450px) {
-    img{
-        height: 120px;
-        margin-bottom: 0;
-    }
+  .bearingsTitle{
+    font-size: 30px;
+  }
+  .bearings{
+    height: 100px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 380px) {
+
+  .bearingsTitle{
+    font-size: 26px;
+  }
+  .title{
+    font-size: 30px;
+  }
 }

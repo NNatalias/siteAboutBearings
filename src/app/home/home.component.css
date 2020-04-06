@@ -1,82 +1,320 @@
-.text{
-    font-size: 150%;
-}
-.logoKP{
-    display: none;
-}
-img{
-    width: 70%;
-    height: 100%;
+.bearingsPromo{
+  background: url("../../assets/Bearings_Promo.jpg")center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
 }
 .title{
-    text-align: center;
-    font-size: 400%;
-    text-transform: uppercase;
-    margin-bottom: 1%;
+   display: flex;
+   justify-content: space-around;
+   font-size: 72px;
+   color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,.5);
+   text-transform: uppercase;
+   font-weight: bold;
+   padding-top: 9%;
+   margin: 0;
+ }
+.subtitle{
+  text-shadow: 0 0 5px rgba(0,0,0,.5);
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+.subtitle2{
+  font-size: 64px;
+  font-family: 'Oswald', sans-serif;
+  margin: 1% 0 2% 5%;
+}
+.text{
+  color: #1D2B3B;
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 7%;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f5f5f5;
 }
 .title2{
     text-transform: uppercase;
-    font-size: 250%;
+    font-size: 36%;
     margin-top: 1%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
-.mobLogo{
-    display: none;
+.container2{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-around;
 }
-.mob2Logo{
-    display: none;
+.logoBrands img{
+  height: 100%;
+  width: 70%;
+  max-width: 250px;
+}
+.text2{
+  width: 50%;
+  color: #000c17;
+  font-size: 26px;
+}
+.bt{
+  width: 30%;
+  background-color: #0C57FB;
+}
+.logo{
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 1% 0 2%;
+  height: 170px;
+  overflow-y: hidden;
+}
+.logo::-webkit-scrollbar {
+  width: 5px;
+}
+.logo::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+.logo img{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding: 0 2%;
+}
+.logoBrands img{
+  width: 170px;
+  height: 160px;
+}
+.logoBrands2{
+  display: none;
+}
+@media (max-width: 1200px) {
+  .logo{ padding: 0;}
+
+}
+@media (max-width: 1100px) {
+  .bearingsPromo{
+    height: 400px;
+  }
+  .subtitle2 {
+    font-size: 55px;
+  }
+  .text{
+    font-size: 33px;
+  }
+  .text2{
+    font-size: 23px;
+  }
+  .logo img {
+    height: 145px;
+    width: 145px;
+  }
 }
 @media (max-width: 1000px) {
-    .text {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: medium;
-    }
-    .title{
-        display: none;
-    }
-    .title2{
-        font-size: xx-large;
-        margin-top: 1%;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-
-    }
+  .bearingsPromo{
+    height: 380px;
+  }
+  .title{
+    font-size: 62px;
+  }
+  .subtitle {
+    font-size: 44px;
+  }
+  .subtitle2 {
+    font-size: 50px;
+  }
+  .text{
+    font-size: 30px;
+  }
+  .text2{
+    font-size: 21px;
+    width: 45%;
+  }
+  .logoBrands img{
+    width: 160px;
+    height: 150px;
+  }
+  .logo{
+    height: 160px;
+  }
+  .logo img {
+    height: 140px;
+    width: 140px;
+  }
 }
 @media (max-width: 850px) {
-    .title2{
-        margin: 0;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .logo{
-        display: none;
-    }
-    .mobLogo{
-        display: none;
-    }
-    .mob2Logo{
-        display: block;
-    }
+  .bearingsPromo {
+    height: 365px;
+  }
+  .title {
+    font-size: 53px;
+    padding-top: 14%;
+  }
+  .subtitle {
+    font-size: 36px;
+  }
+  .subtitle2 {
+    font-size: 45px;
+  }
+  .text {
+    font-size: 27px;
+  }
+  .text2{
+    font-size: 18px;
+    padding-top: 1%;
+  }
+  .logo img {
+    width: 130px;
+    height: 125px;
+  }
+  .logoBrands{
+    width: 50%;
+  }
+  .logoBrands img{
+    width: 150px;
+    height: 140px;
+  }
 }
-@media (max-width: 550px) {
-    .logo{
-        display: none;
-    }
-    .mobLogo{
-        display: block;
-    }
-    .mob2Logo{
-        display: none;
-    }
-    .title2{
-        margin: 0;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 1%;
-    }
+@media (max-width: 740px) {
+  .bearingsPromo{
+    height: 340px;
+  }
+  .title{
+    font-size: 47px;
+    padding-top: 16%;
+  }
+  .subtitle {
+    font-size: 32px;
+  }
+  .text{
+    font-size: 25px;
+  }
+  .container2{
+    display: block;
+  }
+  .text2{
+    width: 90%;
+    margin: 0 5% 0 5%;
+    font-size: 20px;
+  }
+  .logoBrands2{
+     display: block;
+   }
+  .logoBrands2 img{
+    width: 140px;
+    height: 120px;
+  }
+  .logoBrands{
+    display: none;
+  }
+  .logo{
+    height: 150px;
+  }
+  .logo img{
+    width: 120px;
+    height: 110px;
+  }
 }
-
+@media (max-width: 650px) {
+  .bearingsPromo{
+    height: 330px;
+  }
+  .title{
+    font-size: 42px;
+    padding-top: 18%;
+  }
+  .subtitle {
+    font-size: 27px;
+  }
+  .text{
+    font-size: 23px;
+  }
+}
+@media (max-width: 560px) {
+  .bearingsPromo{
+    height: 290px;
+  }
+  .title{
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 23px;
+  }
+  .text{
+    font-size: 22px;
+    padding: 5%;
+  }
+  .text2{
+    width: 90%;
+    font-size: 20px;
+    padding: 0 5% 0 5%;
+    margin: 0;
+  }
+  .logo{
+    height: 130px;
+  }
+  .logo img{
+    width: 110px;
+    height: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .bearingsPromo{
+    height: 240px;
+  }
+  .title{
+    font-size: 27px;
+  }
+  .subtitle {
+    font-size: 23px;
+  }
+  .text{
+    font-size: 20px;
+  }
+  .text2{
+      font-size: 18px;
+  }
+  .logoBrands2 img{
+    width: 110px;
+    height: 110px;
+  }
+  .subtitle2{
+    font-size: 40px;
+  }
+}
+@media (max-width: 378px) {
+  .bearingsPromo{
+    height: 220px;
+  }
+  .title{
+    font-size: 23px;
+    padding-top: 19%;
+  }
+  .text{
+    font-size: 19px;
+  }
+  .text2{
+    font-size: 17px;
+  }
+  .subtitle2{
+    font-size: 36px;
+    margin: 3% 0 3% 5%;
+  }
+  .logo img{
+    width: 110px;
+  }
+  .logoBrands2 img{
+    width: 95px;
+    height: 90px;
+  }
+}
+@media (max-width: 330px) {
+  .text{
+    font-size: 18px;
+  }
+}

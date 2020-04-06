@@ -1,34 +1,43 @@
+<div class="language">
+    <button  mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ua')">УКР</button>
+    <button  mat-button *ngIf="currentLang == 'ua'" (click)="useLanguage('ru')">РУС</button>
+</div>
 <div class="menu">
-        <mat-grid-list cols="5" rowHeight="70px">
-            <a routerLink="/about">
-                <mat-grid-tile> <img mat-card-image src="../../assets/logo.png" alt="Логотип"></mat-grid-tile>
+        <mat-grid-list cols="6" rowHeight="70px">
+            <a style="font-family: 'Oswald', sans-serif; font-weight: bold; font-size: 48px;" routerLink="/about">
+              <mat-grid-tile>КРП</mat-grid-tile>
             </a>
-            <a routerLink="/home">
+            <a routerLink="/"routerLinkActive="active"
+               [routerLinkActiveOptions]="{exact:true}">
                 <mat-grid-tile>ГЛАВНАЯ</mat-grid-tile>
             </a>
-            <a routerLink="/about">
+            <a routerLink="/about" routerLinkActive="active">
                 <mat-grid-tile>О КОМПАНИИ</mat-grid-tile>
             </a>
-            <a routerLink="/priceList">
-                <mat-grid-tile>ПРОДУКЦИЯ</mat-grid-tile>
+            <a href="" target="_blank">
+               <mat-grid-tile>МАГАЗИН</mat-grid-tile>
             </a>
-            <a routerLink="/contacts">
+            <a routerLink="/priceList" routerLinkActive="active">
+                <mat-grid-tile>ДОСТАВКА</mat-grid-tile>
+            </a>
+            <a routerLink="/contacts" routerLinkActive="active">
                 <mat-grid-tile >КОНТАКТЫ</mat-grid-tile>
             </a>
         </mat-grid-list>
 </div>
-<mat-sidenav-container class="mobileMenu" >
-    <mat-sidenav #sidenav (click)="sidenav.toggle()">
-        <ul class="toggleMenu">
-            <li><a routerLink="/home">ГЛАВНАЯ</a></li>
-            <li><a routerLink="/about" >О КОМПАНИИ</a></li>
-            <li><a routerLink="/priceList" >ПРОДУКЦИЯ</a></li>
-            <li> <a routerLink="/contacts" >КОНТАКТЫ</a></li>
-        </ul>
-    </mat-sidenav>
-    <div class="menuLogo">
-        <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
-        <a routerLink="/home"><h4 style="text-align: center;margin-right: 2%;margin-bottom: 0;margin-top: 3%;padding-left: -1%; text-transform: uppercase;">Кривбасподшипник</h4></a>
-    </div>
-</mat-sidenav-container>
+<div class="mobMenu">
+<button mat-button style="font-size: 30px;" [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+  <a style="text-transform: uppercase; padding: 0;
+         font-size: 32px;;font-family: 'Oswald', sans-serif; font-weight: bold;text-decoration: underline;" routerLink="/about">КРП</a>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item><a routerLink="/home" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{exact:true}">ГЛАВНАЯ</a></button>
+  <button mat-menu-item><a routerLink="/about" routerLinkActive="active">О КОМПАНИИ</a></button>
+  <button mat-menu-item><a href="" target="_blank">МАГАЗИН</a></button>
+  <button mat-menu-item><a routerLink="/priceList" routerLinkActive="active">ДОСТАВКА</a></button>
+  <button mat-menu-item><a routerLink="/contacts" routerLinkActive="active">КОНТАКТЫ</a></button>
+  <button mat-menu-item *ngIf="currentLang == 'ru'" (click)="useLanguage('ua')"style="background-color: #0C57FB;color: white;"><mat-icon style="color: white;">language</mat-icon>УКР</button>
+  <button mat-menu-item *ngIf="currentLang == 'ua'" (click)="useLanguage('ru')"style="background-color: #0C57FB;color: white;"><mat-icon style="color: white;">language</mat-icon>РУС</button>
+</mat-menu>
 
+</div>

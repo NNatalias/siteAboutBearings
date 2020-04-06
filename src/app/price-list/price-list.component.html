@@ -1,38 +1,41 @@
 <div class="wrapScreen">
-<h1 style="text-align: center;text-transform: uppercase;">Полный список постовляемого товара</h1>
+<div class="title">Полный список постовляемого товаров</div>
 <div style=" display: flex; justify-content: center; margin: 1%;font-size: larger;">
   <button class="bt" mat-raised-button><a style="color: white;text-decoration: none;" href="../../assets/price.xls"> Скачать файл</a></button>
 </div>
 </div>
 <div class="containerMob">
-  <h1 style="text-align: center; margin: 1%;text-transform: uppercase;">Список товаров</h1>
-  <div style=" display: flex; justify-content: center; margin: 1%;font-size: larger;">
+  <div class="title">Полный список товаров</div>
+  <div style="margin: 1%; display: flex; justify-content: center;font-size: larger;">
       <button class="bt"mat-raised-button><a style="color: white;text-decoration: none;" href="../../assets/price.xls">Скачать файл</a></button>
   </div>
 </div>
 <div class="wrap">
  <div class="paragraph1">
-    <h1 style="margin: 0;">Оплата товара</h1>
-    <div class="fontS">Наличная оплата</div>
+    <span class="firstTitle">Оплата товара</span><br>
+    <span class="fontS">Наличная оплата</span><br>
     Товар оплачивается наличными только в национальной валюте. Для оплаты товаров наличными Вам необходимо будет подъехать к нам в офис.
     При совершении оплаты Вы получаете товарный чек. Так же оплата наличными возможна при получении товара в отделениях доставки («Нова пошта» или «Міст Експрес»).<br>
-    <div class="fontS">Оплата картами Visa и MasterCard</div>
+    <span class="fontS">Оплата картами Visa и MasterCard</span><br>
     Оплата совершается картами Visa и MasterCard любого банка.Вы можете осуществлять платежи через Интернет-банк, терминалы самообслуживания
     и банкоматы, в отделениях.
   </div>
   <div class="paragraph2">
-    <h1 style="margin: 0;">Доставка товара</h1>
-    <div class="fontS">Самовывоз</div>
+    <span class="firstTitle">Доставка товара</span><br>
+    <span class="fontS">Самовывоз</span><br>
     Вы можете получить свой заказ в нашем <a routerLink="/contacts">офисе</a> или прямо со склада.<br>
-    <div class="fontS">Самовывоз из почтовых отделений</div>
+    <span class="fontS">Самовывоз из почтовых отделений</span><br>
     Вы можете получить свой заказ в одном из отделений транспортных компаний «Нова пошта» или «Мист Экспресс».
-      Графики работы отделений и адреса Вы найдете на сайтах <a href="https://novaposhta.ua/ru/office" target="_blank">novaposhta.ua</a> и <a href="https://www.meest-express.com.ua/ua/karta-viddilen/" target="_blank">meest-express.com.ua.</a>
+      Графики работы отделений и адреса Вы найдете на сайтах
+    <a href="https://novaposhta.ua/ru/office" target="_blank">novaposhta.ua</a> и <a href="https://www.meest-express.com.ua/ua/karta-viddilen/" target="_blank">meest-express.com.ua.</a>
     Стоимость доставки зависит от веса, габаритных размеров товара и выбранной транспортной компании.
   </div><div class="paragraph3">
-    <h1 style="margin: 0;">Гарантия</h1>
+    <span class="firstTitle">Гарантия</span><br>
   Вся поставляемая нами продукция высокого качества подтверждена паспортами
   и сертификатами на территории Украины.
   Гарантийный срок на определенный товар устанавливается фирмой-производителем.</div>
 </div>
-<img mat-card-image src="../../assets/pic2.png" alt="картинка реализации доставки">
+<div class="bearings">
+  <div class="bearingsTitle">Остались вопросы? <a routerLink="/contacts">Свяжитесь с нами!</a></div>
+</div>
 

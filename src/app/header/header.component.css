@@ -1,100 +1,101 @@
+.language{
+  background-color: #0C57FB;
+  height: 36px;
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  padding-right: 3%;
+}
 .menu{
     display: flex;
-    width: 1024px;
+    justify-content: space-around;
     font-weight: bolder;
-    height: 70px;
     font-family: 'Montserrat', sans-serif;
+    margin: 0 5% 0 5%;
 }
 a{
     text-align: center;
-    color: #424242;
     text-transform: uppercase;
+    padding: 8px 16px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
 }
 a:hover{
-    color: #6c87a3;
+    color: #0C57FB;
+}
+.active {
+  color: #0C57FB;
 }
 mat-grid-list{
     list-style: none;
     padding: 0;
     margin: 0;
     flex: 1 1 auto;
-    font-size: large;
 }
 mat-grid-tile{
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: underline;
 }
-.menuLogo{
-    display: none;
+.mobMenu{
+  display: none;
 }
 img{
     width: 90%;
     height: 100%;
 }
+@media (max-width: 1100px) {
+  .menu a {
+    font-size: 19px;
+  }
+  .menu{
+    margin: 0 4% 0 4%;
+  }
+}
 @media (max-width: 1000px) {
-    .wrap{
-        display: none;
-    }
-    .mobileMenu {
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        background-color: white;
-        padding-left: 0;
-        width: 100%;
-        overflow-x: hidden;
-        margin: 0;
-    }
-    mat-sidenav-content{
-        margin: 0;
-        padding: 0;
-    }
-    a{
-        cursor: pointer;
-        text-transform: uppercase;
-        color: white;
-    }
-    a:hover{
-        color: gray;
-    }
-    li {
-        list-style-type: none;
-        text-align: center;
-        margin-top: 2%;
-        font-size: x-large;
-    }
-    mat-sidenav-container{
-        position: inherit;
-        text-align: center;
-    }
-    mat-sidenav-container button{
-        float: left;
-        margin-top: -8px;
-    }
-    .mat-drawer{
-        width: 100vw;
-        background: rgba(0,0,0,0.5);
-    }
-    .toggleMenu{
-        color: inherit;
-        padding-top: 10px;
-        margin-top: 22%;
-        padding-left: 0;
-    }
-    .mobileMenu a{
-        font-size: 20px;
-    }
-    mat-sidenav-container .menuLogo a{
-        color: black;
-    }
-    .menuLogo{
-        display: block;
-
-    }
-img{
-    display: none;
+  .menu a {
+    font-size: 18px;
+  }
 }
-.menu{
-    display: none;
+@media (max-width: 920px) {
+  .menu a {
+    font-size: 16px;
+  }
 }
+@media (max-width: 820px) {
+  .menu a {
+    font-size: 15px;
+  }
+  .menu{
+    margin: 0 3% 0 3%;
+  }
+}
+@media (max-width: 755px) {
+  .menu a {
+    font-size: 14px;
+  }
+  .menu{
+    margin: 0 2% 0 2%;
+  }
+}
+@media (max-width: 700px) {
+  .menu a {
+    font-size: 13px;
+  }
+  .menu{
+    margin: 0;
+  }
+}
+@media (max-width: 620px) {
+   .menu{
+     display: none;
+   }
+  .language{
+    display: none;
+  }
+  .mobMenu{
+    display: block;
+    margin-bottom: 2%;
+  }
 }
